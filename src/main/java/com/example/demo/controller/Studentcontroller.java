@@ -37,5 +37,6 @@ public class Studentcontroller {
     }else{
         throw new RuntimeException("Student with ID " + id + "not found");
     }
+    }
 
 }
