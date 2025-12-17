@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.demo.entity.Studententity;
-import con.example.demo.service.Studentservice;
+import con.example.demo.Service.Studentservice;
 
 @ResController
 @RequestMapping("/student")
