@@ -27,7 +27,10 @@ public class Studentservice {
 
     public Studententity updateStudent(int id , Studententity st){
         if(details.containsKey(id)){
-            st.setId(id)
+            st.setId(id);
+            details.put(id,st);
+            return st;
         }
+        return null;
     }
 }
