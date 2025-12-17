@@ -1,3 +1,13 @@
 package com.example.demo.controller;
 
-import java.
+import java.util.Collection;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation;
+
+import com.example.demo.entity.Studententity;
+import con.example.demo.service.Studentservice;
+
+@ResController;
+@RequestMapping("/student")
+
+public class Student
