@@ -6,3 +6,8 @@ import org.springframework.stereotype.repository;
 import com.example.demo.entity.student;
 @Repositorypublic interface Studentrepository extends jpaRepository<Student,Long>{
 }
+
+
+Sedayr
+New South Wales
+123  1234567890
