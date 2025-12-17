@@ -10,4 +10,19 @@ import con.example.demo.service.Studentservice;
 @ResController;
 @RequestMapping("/student")
 
-public class Student
+public class Studentcontroller {
+    @Autowired
+    Studentservice ser;
+
+    @PostMapping("/add")
+    public Studententity addStudent(@RequestBody Studententity st){
+        return ser.saveData(st);
+    }
+
+    @GetMapping("/{id}")
+    public Studententity getStudent(@PathVariable int id){
+        return ser.getById(id);
+    }
+
+    @
+}
