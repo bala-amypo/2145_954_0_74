@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Studententity;
 import con.example.demo.service.Studentservice;
 
-@ResController;
+@ResController
 @RequestMapping("/student")
 
 public class Studentcontroller {
