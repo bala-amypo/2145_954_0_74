@@ -24,5 +24,18 @@ public class Studentcontroller {
         return ser.getById(id);
     }
 
-    @
+    @GetMapping("/add")
+    public Collection<Studententity>getAllStudents(){
+        return ser.getAll();
+    }
+
+    @PutMapping("/update/{id}")
+    public Studententity updateStudent(@PathVariable int id , @RequestBody Studententity st){
+        Studententity updated = ser.updateStudent(id,st);
+    if(updated != null){
+        return updated;
+    }else{
+        throw new RuntimeException("Student with ID " + id + "not found");
+    }
+
 }
