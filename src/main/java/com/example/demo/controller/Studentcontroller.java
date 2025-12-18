@@ -13,6 +13,7 @@ import com.example.demo.service.Studentservice;
 public class Studentcontroller {  //class 
     @Autowired
     Studentservice ser; //ser - object of service file , DECLARATION
+                          //CLASS NAME == CONSTRUCTOR NAME
 
     @PostMapping("/add") // we give req - our req gets by controller 
     public Studententity addStudent(@RequestBody Studententity st){ //swagger heading ah varum
