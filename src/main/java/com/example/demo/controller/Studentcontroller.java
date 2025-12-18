@@ -12,9 +12,9 @@ import com.example.demo.service.Studentservice;
 
 public class Studentcontroller {  //class 
     @Autowired
-    Studentservice ser; //ser - object of service file , 
+    Studentservice ser; //ser - object of service file , DECLARATION
 
-    @PostMapping("/add") //our req gets by controller - we give req
+    @PostMapping("/add") // we give req - our req gets by controller 
     public Studententity addStudent(@RequestBody Studententity st){ //swagger heading ah varum
         return ser.saveData(st);
     }
