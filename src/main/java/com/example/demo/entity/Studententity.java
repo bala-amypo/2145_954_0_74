@@ -40,3 +40,10 @@ public class Studententity {
     }
 
 }
+
+//user.java 
+   //public{
+   //@ any field @Vehicle id
+   //private Long id 
+   //}
+   

@@ -40,3 +40,9 @@ public class Studentcontroller {
     }
 
 }
+//create these file inside controller
+//usercontroller.java
+//vehiclecon.java
+//locationcon.java
+//shipment.java
+//routeopcon.java
