@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 
-@RestController
+@RestController 
 @RequestMapping("/student")
 
-public class Studentcontroller {
+public class Studentcontroller {  //class 
     @Autowired
     Studentservice ser;
 
-    @PostMapping("/add")
+    @PostMapping("/add") //
     public Studententity addStudent(@RequestBody Studententity st){
         return ser.saveData(st);
     }
