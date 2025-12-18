@@ -10,13 +10,12 @@ import com.example.demo.service.Studentservice;
 @RestController 
 @RequestMapping("/student")
 
-public class Studentcontroller {  //class 
+public class Studentcontroller {  
     @Autowired
-    Studentservice ser; //ser - object of service file , DECLARATION
-                          //CLASS NAME == CONSTRUCTOR NAME
+    Studentservice ser; 
 
-    @PostMapping("/add") // we give req - our req gets by controller 
-    public Studententity addStudent(@RequestBody Studententity st){ //swagger heading ah varum
+    @PostMapping("/add") 
+    public Studententity addStudent(@RequestBody Studententity st){ 
         return ser.saveData(st);
     }
 
